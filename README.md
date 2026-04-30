@@ -14,8 +14,11 @@ py main.py 10 EUR USD --precision 4
 ## Opcje
 
 --base XXX — waluta bazowa, względem której pobierane są kursy (domyślnie równa from_currency)
+
 --cache-ttl SECONDS — czas życia pamięci podręcznej (domyślnie 12 godzin)
+
 --refresh — ignoruj pamięć podręczną i zaktualizuj kursy
+
 --precision N — liczba miejsc po przecinku
 
 
