@@ -1,16 +1,8 @@
 # Currency Converter (Python)
 
-Консольный конвертер валют на Python. Курсы берутся с `open.er-api.com` (без API-ключа) и кэшируются локально.
+Konsolowy konwerter walut w języku Python. Kursy walut są pobierane z open.er-api.com (bez klucza API) i przechowywane lokalnie w pamięci podręcznej (cache).
 
-## Установка
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-## Примеры
+## Przykłady
 
 ```bash
 py main.py 100 USD EUR
@@ -19,23 +11,22 @@ py main.py 10 GBP JPY --refresh
 py main.py 10 EUR USD --precision 4
 ```
 
-## Опции
+## Opcje
 
-- `--base XXX` — валюта базы, относительно которой запрашиваются курсы (по умолчанию равна `from_currency`)
-- `--cache-ttl SECONDS` — время жизни кэша (по умолчанию 12 часов)
-- `--refresh` — игнорировать кэш и обновить курсы
-- `--precision N` — количество знаков после запятой
+--base XXX — waluta bazowa, względem której pobierane są kursy (domyślnie równa from_currency)
+--cache-ttl SECONDS — czas życia pamięci podręcznej (domyślnie 12 godzin)
+--refresh — ignoruj pamięć podręczną i zaktualizuj kursy
+--precision N — liczba miejsc po przecinku
 
-## Оконный интерфейс (GUI)
 
-Запуск:
+## Interfejs graficzny (GUI)
+
+Uruchomienie:
 
 ```bash
 py gui.py
 ```
 
-Кнопки:
-
-- **Convert** — посчитать и показать результат
-- **New convert** — полностью сбросить сумму, пары валют и результат
+- **Convert** — obliczyć i wyswietlić wynik
+- **New convert** — wyczyszcza interfejs
 
